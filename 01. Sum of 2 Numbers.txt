@@ -1,0 +1,6 @@
+1. Sum of 2 Numbers
+
+
+sum(X, Y) :- S is X + Y,
+ write(S),
+  nl.

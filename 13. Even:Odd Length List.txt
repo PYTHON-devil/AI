@@ -1,0 +1,7 @@
+13. Even/Odd Length List
+
+
+evenlength([]) :- !.
+evenlength([_|T]) :- oddlength(T).
+oddlength([_]) :- !.
+oddlength([_|T]) :- evenlength(T).

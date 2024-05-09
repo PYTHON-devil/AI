@@ -1,0 +1,9 @@
+11. Palindrome List
+
+
+conc([], L, L).
+conc([H|L1], L2, [H|L3]) :-  conc(L1, L2, L3).
+reverse1([], []) :- !.
+reverse1([H|T], R) :- reverse(T, RT),
+                     conc(RT, [H], R).
+palindrome(L) :- reverse(L, L).
